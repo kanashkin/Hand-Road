@@ -1,0 +1,104 @@
+/* Base styles */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+
+body {
+    background: rgba(13, 13, 13, 1);
+}
+
+input {
+    width: 100%;
+}
+
+button,
+input,
+textarea,
+select,
+option {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+}
+
+li {
+    list-style: none;
+}
+
+span {
+    font-family: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'TT Bluescreens Trial';
+    src: url(../fonts/TTBluescreensTrialDemiBold.ttf) format(truetype);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Bluescreens Trial';
+    src: url(../fonts/TTBluescreensTrialBold.ttf) format(truetype);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Light.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Light.woff') format('woff'),
+         url('../fonts/ClashDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+  
+  
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
+         url('../fonts/ClashDisplay-Regular.woff') format('woff'),
+         url('../fonts/ClashDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+  
+  
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('../fonts/ClashDisplay-Medium.woff2') format('woff2'),
+            url('../fonts/ClashDisplay-Medium.woff') format('woff'),
+            url('../fonts/ClashDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+.tt {
+    font-family: 'TT Bluescreens Trial';
+}
+
+.clash {
+    font-family: 'ClashDisplay';
+}
