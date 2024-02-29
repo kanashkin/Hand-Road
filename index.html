@@ -4,9 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Main-page</title>
+    <title>HandRound</title>
 </head>
 <body>
-    
+    <img class="light light-1" src="img/light.png" alt="">
+    <img class="light light-2" src="img/light.png" alt="">
+    <img class="light light-3" src="img/light.png" alt="">
+    <section class="promo">
+        <div class="container promo__wrapper">
+            <a class="logo" href="">
+                <img class="child-img" src="img/promo/logo.png" alt="logotype image">
+            </a>
+            <h1 class="promo-title tt">
+                Empowering Artists, Inspiring Moments:
+                Your Music Story <span>Starts Now</span>
+            </h1>
+            <div class="mouse__wrapper">
+                <div class="mouse__circle"></div>
+                <img class="mouse" src="img/promo/mouse.png" alt="">
+            </div>
+        </div>
+        <video class="promo-video" autoplay muted loop>
+            <source src="video/promo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    <section class="marquee">
+        <div class="marquee__wrapper">
+            <p class="marquee-item tt"> CREATIVITY / DIVERSITY / VISIONARY / ARTISTRY / INGENUITY</p>
+            <p class="marquee-item tt"> CREATIVITY / DIVERSITY / VISIONARY / ARTISTRY / INGENUITY</p>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container about__wrapper">
+            <p class="about-text clash element-animation">
+                <span>The Hana Road Music Group</span> values creativity, diversity, and style, which allows us to excel on the way to achieving our goals. Each member of The Hana Road Music Group lives and breathes what one does. <br> <br>
+                We are able to build strong networks and powerful collaborations with the biggest players in the industry. Open-mindedness, professionalism, and activeness are the features that unite and enhance our team.
+            </p>
+        </div>
+    </section>
+    <section class="releases">
+        <video class="releases-video" autoplay muted loop>
+            <source src="video/releases.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h2 class="title">OUR RELEASES</h2>
+        <div class="releases__wrapper">
+            <div class="releases__items">
+                <img class="release" src="img/releases/01.png" alt="">
+                <img class="release" src="img/releases/02.png" alt="">
+                <img class="release" src="img/releases/03.png" alt="">
+                <img class="release" src="img/releases/04.png" alt="">
+                <img class="release" src="img/releases/05.png" alt="">
+            </div>
+            <div class="releases__items">
+                <img class="release" src="img/releases/01.png" alt="">
+                <img class="release" src="img/releases/02.png" alt="">
+                <img class="release" src="img/releases/03.png" alt="">
+                <img class="release" src="img/releases/04.png" alt="">
+                <img class="release" src="img/releases/05.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="marquee">
+            <div class="marquee__wrapper">
+                <p class="marquee-item tt">ARTIST DEVELOPMENT / MANAGEMENT / MUSIC AND VIDEO PRODUCTION / MARKETING & PROMOTION</p>
+                <p class="marquee-item tt">ARTIST DEVELOPMENT / MANAGEMENT / MUSIC AND VIDEO PRODUCTION / MARKETING & PROMOTION</p>
+            </div>
+        </div>
+        <h2 class="title">OUR SERVICES</h2>
+        <ul class="services__list container clash">
+            <li class="services__list-item active">ARTIST DEVELOPMENT</li>
+            <li class="services__list-item">MANAGEMENT</li>
+            <li class="services__list-item">MUSIC AND VIDEO PRODUCTION</li>
+            <li class="services__list-item">MARKETING & PROMOTION</li>
+            <li class="services__list-item">DISTRIBUTION</li>
+            <li class="services__list-item">SYNC LICENSING AND PUBLISHING</li>
+            <li class="services__list-item">LEGAL SUPPORT</li>
+        </ul>
+    </section>
+    <section class="feed">
+        <div class="feed__wrapper container">
+            <h2 class="feed-title tt">SEND US YOUR DEMO TRACK</h2>
+            <form class="feed__form" action="">
+                <div class="feed__form__wrapper">
+                    <input class="feed__form-input clash" type="text" placeholder="Name" required>
+                    <input class="feed__form-input clash" type="text" placeholder="Artist Name" required>
+                    <input class="feed__form-input clash" type="text" placeholder="Phone" required>
+                    <input class="feed__form-input clash" type="email" placeholder="E-mail" required>
+                    <input class="feed__form-input clash" type="text" placeholder="Link to demo(s)" required>
+                    <textarea class="feed__form-input clash" placeholder="Additional Info" required></textarea>
+                </div>
+                <div class="feed__form__footer">
+                    <button class="feed__form-btn clash" type="submit">SEND</button>
+                    <div class="socials">
+                        <a class="socials__item" href="">
+                            <img src="img/form/inst.png" alt="">
+                        </a>
+                        <a class="socials__item" href="">
+                            <img src="img/form/youtube.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <p class="feed__form-copyright clash">Copyright @ 2024 The Hana Road Music Group Sarl</p>
+            </form>
+        </div>
+    </section>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
