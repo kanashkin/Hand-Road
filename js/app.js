@@ -1,40 +1,36 @@
-function addAnimation() {
-    const animatedElements = document.querySelectorAll('.element-animation');
+function animationScroll() {
+    const animatedElements = document.querySelectorAll('.animation-scroll');
 
-    animatedElements.forEach(function(animatedElement) {
-        const elementTop = animatedElement.offsetTop;
-        const elementBottom = elementTop + animatedElement.offsetHeight;
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animated');
+          }
+        });
+    });
 
-        function isElementInViewport() {
-            const windowHeight = window.innerHeight;
-            const scrollY = window.scrollY || window.pageYOffset;
-            const top = elementTop - scrollY;
-            const bottom = elementBottom - scrollY;
-
-            return (
-                top >= 0 &&
-                bottom <= windowHeight
-            );
-        }
-
-        function handleScroll() {
-            if (isElementInViewport()) {
-                animatedElement.classList.add('animated');
-                window.removeEventListener('scroll', handleScroll);
-            }
-        }
-
-        window.addEventListener('scroll', handleScroll);
+    animatedElements.forEach(function(elem) {
+        observer.observe(elem);
     })
-
-
 }
 
-addAnimation()
+animationScroll()
+
+function animationOpacity() {
+    const elems = document.querySelectorAll('.animation-opacity')
+
+    elems.forEach(function(elem) {
+        setTimeout(function() {
+            elem.classList.add('animated')
+        }, 500)
+    })
+}
+
+animationOpacity()
 
 function servicesAnimation() {
     const listItems = document.querySelectorAll('.services__list-item');
-    
+
     function isElementInViewport(el) {
         const rect = el.getBoundingClientRect();
         return (
