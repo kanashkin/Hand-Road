@@ -17,13 +17,17 @@ function animationScroll() {
 animationScroll()
 
 function animationOpacity() {
-    const elems = document.querySelectorAll('.animation-opacity')
+    const elems = document.querySelectorAll('.animation-opacity');
+    let index = 0;
 
-    elems.forEach(function(elem) {
-        setTimeout(function() {
-            elem.classList.add('animated')
-        }, 500)
-    })
+    const interval = setInterval(function() {
+        if (index < elems.length) {
+            elems[index].classList.add('animated');
+            index++;
+        } else {
+            clearInterval(interval);
+        }
+    }, 800);
 }
 
 animationOpacity()
