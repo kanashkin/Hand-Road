@@ -33,6 +33,7 @@
         <div class="marquee__wrapper">
             <p class="marquee-item tt"> CREATIVITY / DIVERSITY / VISIONARY / ARTISTRY / INGENUITY</p>
             <p class="marquee-item tt"> CREATIVITY / DIVERSITY / VISIONARY / ARTISTRY / INGENUITY</p>
+            <p class="marquee-item tt"> CREATIVITY / DIVERSITY / VISIONARY / ARTISTRY / INGENUITY</p>
         </div>
     </section>
     <section class="about">
@@ -73,6 +74,7 @@
             <div class="marquee__wrapper">
                 <p class="marquee-item tt">ARTIST DEVELOPMENT / MANAGEMENT / MUSIC AND VIDEO PRODUCTION / MARKETING & PROMOTION</p>
                 <p class="marquee-item tt">ARTIST DEVELOPMENT / MANAGEMENT / MUSIC AND VIDEO PRODUCTION / MARKETING & PROMOTION</p>
+                <p class="marquee-item tt">ARTIST DEVELOPMENT / MANAGEMENT / MUSIC AND VIDEO PRODUCTION / MARKETING & PROMOTION</p>
             </div>
         </div>
         <h2 class="title">OUR SERVICES</h2>
@@ -91,21 +93,24 @@
             <h2 class="feed-title tt">SEND US YOUR DEMO TRACK</h2>
             <form class="feed__form" action="">
                 <div class="feed__form__wrapper">
-                    <input class="feed__form-input clash" type="text" placeholder="Name" required>
-                    <input class="feed__form-input clash" type="text" placeholder="Artist Name" required>
-                    <input class="feed__form-input clash" type="text" placeholder="Phone" required>
-                    <input class="feed__form-input clash" type="email" placeholder="E-mail" required>
-                    <input class="feed__form-input clash" type="text" placeholder="Link to demo(s)" required>
-                    <textarea class="feed__form-input clash" placeholder="Additional Info" required></textarea>
+                    <input class="feed__form-input clash" type="text" placeholder="Name" required autocomplete="on">
+                    <input class="feed__form-input clash" type="text" placeholder="Artist Name" required autocomplete="on">
+                    <input class="feed__form-input clash" type="text" placeholder="Phone" required autocomplete="on">
+                    <input class="feed__form-input clash" type="email" placeholder="E-mail" required autocomplete="on">
+                    <input class="feed__form-input clash" type="text" placeholder="Link to demo(s)" required autocomplete="on">
+                    <div class="textarea__wrapper">
+                        <textarea class="feed__form-input clash" placeholder="Additional Info" required minlength="20"></textarea>
+                        <span class="clash textarea-min">minimum of 20 characters </span>
+                    </div>
                 </div>
                 <div class="feed__form__footer">
                     <button class="feed__form-btn clash" type="submit">SEND</button>
                     <div class="socials">
                         <a class="socials__item" href="">
-                            <img src="img/form/inst.svg" alt="">
+                            <img class="child-img" src="img/form/inst.svg" alt="">
                         </a>
                         <a class="socials__item" href="">
-                            <img src="img/form/yt.svg" alt="">
+                            <img class="child-img" src="img/form/yt.svg" alt="">
                         </a>
                     </div>
                 </div>
