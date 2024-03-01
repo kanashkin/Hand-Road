@@ -103,10 +103,6 @@ section {
     z-index: 3;
 }
 
-.releases {
-    z-index: 0;
-}
-
 @media(max-width: 1439px) {
     .light {
         max-width: 1000px;
@@ -472,7 +468,7 @@ section {
     top: -80px;
     left: 0;
     z-index: -1;
-    background-color: rgba(13, 13, 13, 1);
+    background-color: rgb(18,18,18);
 }
 
 .releases-video__wrapper::before,
@@ -499,9 +495,9 @@ section {
     object-fit: cover;
     width: 100%;
     height: 250px;
-    mix-blend-mode: screen;
+    mix-blend-mode: difference;
     isolation: isolate;
-    opacity: .2;
+    opacity: .3;
 }
 
 .releases__wrapper {
